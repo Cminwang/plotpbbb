@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ovall data story-高雄市左營區高齡人口樣態</title>
+    <style>
+        /* 全局樣式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* 標題樣式 */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin: 20px 0;
+            font-size: 2rem;
+        }
+
+        /* 內容容器 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* iframe 樣式 */
+        iframe {
+            display: block;
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* footer 樣式 */
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <h1>My data story:這是高雄市左營區A11到A13的curve chart，呈現高雄市左營區的人口樣態</h1>
-    <iframe src="https://plotdb.io/v/chart/37102" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+    <div class="container">
+        <h1>My data story: 這是高雄市左營區 A11 到 A13 的 curve chart</h1>
+        <p style="text-align: center;">呈現高雄市左營區的人口樣態</p>
+        <iframe src="https://plotdb.io/v/chart/37102" allowfullscreen="true"></iframe>
+    </div>
+    <footer>© 2025 高雄市左營區人口樣態分析</footer>
 </body>
 </html>
