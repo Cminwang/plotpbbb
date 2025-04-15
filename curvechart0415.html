@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #e0f7fa; /* 更改為淺藍色背景 */
             color: #333;
         }
 
@@ -20,6 +20,9 @@
             color: #2c3e50;
             margin: 20px 0;
             font-size: 2rem;
+            background-color: #ffeb3b; /* 背景框框顏色為黃色 */
+            padding: 10px; /* 添加內邊距 */
+            border-radius: 5px; /* 圓角邊框 */
         }
 
         /* 內容容器 */
@@ -30,6 +33,14 @@
             background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+        }
+
+        /* 文字段落樣式 */
+        p {
+            text-align: center;
+            background-color: #c8e6c9; /* 背景框框顏色為淺綠色 */
+            padding: 10px; /* 添加內邊距 */
+            border-radius: 5px; /* 圓角邊框 */
         }
 
         /* iframe 樣式 */
@@ -54,7 +65,7 @@
 <body>
     <div class="container">
         <h1>My data story: 這是高雄市左營區 A11 到 A13 的 curve chart</h1>
-        <p style="text-align: center;">呈現高雄市左營區的人口樣態</p>
+        <p>呈現高雄市左營區的人口樣態</p>
         <iframe src="https://plotdb.io/v/chart/37102" allowfullscreen="true"></iframe>
     </div>
     <footer>© 2025 高雄市左營區人口樣態分析</footer>
