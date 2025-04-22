@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Chart</title>
+    <title>高雄人口圖表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            border: none;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <iframe src="https://plotdb.io/v/chart/37217" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+    <header>
+        <h1>高雄人口趨勢圖</h1>
+    </header>
+    <div class="container">
+        <p>
+            本頁展示了一個互動式圖表，視覺化了台灣高雄市的人口趨勢。 
+            通過此圖表，您可以更直觀地了解高雄市的人口結構與變化。
+        </p>
+        <p>
+            請使用下方的圖表深入探索數據。點擊全螢幕按鈕，您可以獲得更佳的瀏覽體驗。
+        </p>
+        <iframe src="https://plotdb.io/v/chart/37217" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+    </div>
 </body>
 </html>
