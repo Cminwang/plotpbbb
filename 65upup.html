@@ -106,13 +106,18 @@
 
         /* 星空模式樣式 */
         [data-theme="stars"] {
-            background: url('https://www.transparenttextures.com/patterns/stardust.png'), #000;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat, #000;
             color: #FFD700;
         }
         [data-theme="stars"] p, 
         [data-theme="stars"] section {
             background: rgba(255, 255, 255, 0.1);
             border-color: #FFD700;
+        }
+        [data-theme="stars"] h1, 
+        [data-theme="stars"] h2 {
+            color: #FFD700;
+            text-shadow: 3px 3px 5px rgba(255, 215, 0, 0.7);
         }
     </style>
 </head>
@@ -144,7 +149,6 @@
             <h2>集點子計畫</h2>
             <img src="BMKFmhSNgkJ-mwadC3kTU.jpg" alt="高雄市人口統計圖片" style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
             <p>隨著高齡人口逐年增加，即使我的家鄉左營區有蠻多文化與運動資源，但仍然缺乏真正適合長者參與的活動與空間。因此，透過音樂讓長輩與年輕人互動，像是廣場舞，可把音樂改成年輕人做的音樂 這樣也能將這一輩的東西分享給長輩來互相交流，再來還有社區樂團和合唱團，讓長者在音樂與律動中提升身體機能，同時也促進人際之間的交流與互動。</p>
-            <p>此外，我覺得可以設立「樂齡音樂角」，提供電子樂器與錄音設備，讓長者能夠輕鬆接觸數位音樂創作，開發新的興趣和年輕人一起創作音樂增進世代之間的互動與情感聯繫，年輕人可以獲得贊助與推廣，長輩可以獲得情感上的支持與興趣自我實現，創造共贏的價值。</p>
         </section>
         <div style="text-align: center;">
             <button onclick="switchTheme('stars')">星空模式</button>
