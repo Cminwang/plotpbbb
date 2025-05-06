@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="高雄市65歲以上人口分布分析，提供高齡友善城市規劃的參考資料。">
-    <title>65歲以上人口統計 - 高雄市</title>
+    <title>高齡人口熱力圖-65歲以上</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -26,6 +26,7 @@
             margin: 0;
             font-weight: bold;
             letter-spacing: 1px;
+            text-decoration: underline;
         }
         main {
             padding: 20px;
@@ -48,7 +49,7 @@
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, p {
+        h1, h2 {
             margin: 0 0 20px;
         }
         h2 {
@@ -56,11 +57,16 @@
             font-size: 1.5rem;
             font-weight: bold;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            text-decoration: underline;
         }
         p {
             color: #555;
             font-size: 1rem;
             line-height: 1.8;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         section {
             margin-bottom: 30px;
@@ -75,37 +81,40 @@
     <header>
         <h1>65歲以上人口統計 - 高雄市</h1>
     </header>
-   <main>
-    <section>
-        <p>以下為一個嵌入式圖表，顯示高雄市65歲以上的人口統計數據，來源於 PlotDB。此圖表支援全屏模式，並能自適應不同的螢幕尺寸。</p>
-        <iframe src="https://plotdb.io/v/chart/37291" width="100%" height="600px" allowfullscreen="true"></iframe>
-    </section>
-    <section>
-        <h2>人口分析與觀察</h2>
-        <p>根據資料分析，我的家鄉在113年12月的65歲以上人口中，透過地圖視覺化可明顯看出，人口老化主要集中於靠海的地區。</p>
-        <p>可發現有些行政區高齡比例明顯偏高，可能與長照資源、地區醫療條件有關。這提醒我們，社區在面對高齡化趨勢時，需思考在地照護、公共設施與醫療資源的再分配。</p>
-        <p>此分析期望能提供地方政府或民間團體，在規劃高齡友善城市策略時一個參考依據。</p>
-    </section>
-    <section>
-        <h2>85歲以上人口統計</h2>
-        <p>以下為高雄市85歲以上人口的嵌入式圖表，提供更多高齡人口分布資料。</p>
-        <iframe src="https://plotdb.io/v/chart/37319" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
-    </section>
-    <section>
-        <h2>85歲以上人口分析與觀察</h2>
-        <p>從數據中可觀察到，高雄市85歲以上人口的分布情況，與65歲以上人口的分布有些許不同。此年齡層的人口比例在某些傳統村落與偏遠地區顯著增加。</p>
-        <p>高齡人口的集中地區，可能與長期居住習慣、傳統文化以及該地的生活成本較低有關。這些地區的醫療資源與長照服務可能需要進一步強化，以應對逐年增加的需求。</p>
-        <p>透過這份資料，我們希望能協助政府單位及非營利組織，針對85歲以上高齡族群規劃更完善的生活支持系統，打造真正高齡友善的社區。</p>
-    </section>
-       <section>
-    <h2>集點子計畫</h2>
-    <img src="BMKFmhSNgkJ-mwadC3kTU.jpg" alt="高雄市人口統計圖片" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-    <p>隨著高齡人口逐年增加，即使我的家鄉左營區有蠻多文化與運動資源，但仍然缺乏真正適合長者參與的活動與空間。因此，透過音樂讓長輩與年輕人互動，像是廣場舞，可把音樂改成年輕人做的音樂 這樣也能將這一輩的東西分享給長輩來互相交流，再來還有社區樂團和合唱團，讓長者在音樂與律動中提升身體機能，同時也促進人際之間的交流與互動。
-此外，我覺得可以設立「樂齡音樂角」，提供電子樂器與錄音設備，讓長者能夠輕鬆接觸數位音樂創作，開發新的興趣和年輕人一起創作音樂增進世代之間的互動與情感聯繫，年輕人可以獲得贊助與推廣，長輩可以獲得情感上的支持與興趣自我實現，創造共贏的價值。</p>
-</section>
-</main>
+    <main>
+        <section>
+            <p>以下為一個嵌入式圖表，顯示高雄市65歲以上的人口統計數據，來源於 PlotDB。此圖表支援全屏模式，並能自適應不同的螢幕尺寸。</p>
+            <iframe src="https://plotdb.io/v/chart/37291" width="100%" height="600px" allowfullscreen="true"></iframe>
+        </section>
+        <section>
+            <h2>人口分析與觀察</h2>
+            <p>根據資料分析，我的家鄉在113年12月的65歲以上人口中，透過地圖視覺化可明顯看出，人口老化主要集中於靠海的地區。</p>
+            <p>可發現有些行政區高齡比例明顯偏高，可能與長照資源、地區醫療條件有關。這提醒我們，社區在面對高齡化趨勢時，需思考在地照護、公共設施與醫療資源的再分配。</p>
+            <p>此分析期望能提供地方政府或民間團體，在規劃高齡友善城市策略時一個參考依據。</p>
+        </section>
+        <section>
+            <h2>85歲以上人口統計</h2>
+            <p>以下為高雄市85歲以上人口的嵌入式圖表，提供更多高齡人口分布資料。</p>
+            <iframe src="https://plotdb.io/v/chart/37319" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+        </section>
+        <section>
+            <h2>85歲以上人口分析與觀察</h2>
+            <p>從數據中可觀察到，高雄市85歲以上人口的分布情況，與65歲以上人口的分布有些許不同。此年齡層的人口比例在某些傳統村落與偏遠地區顯著增加。</p>
+            <p>高齡人口的集中地區，可能與長期居住習慣、傳統文化以及該地的生活成本較低有關。這些地區的醫療資源與長照服務可能需要進一步強化，以應對逐年增加的需求。</p>
+            <p>透過這份資料，我們希望能協助政府單位及非營利組織，針對85歲以上高齡族群規劃更完善的生活支持系統，打造真正高齡友善的社區。</p>
+        </section>
+        <section>
+            <h2>集點子計畫</h2>
+            <img src="BMKFmhSNgkJ-mwadC3kTU.jpg" alt="高雄市人口統計圖片" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <p>隨著高齡人口逐年增加，即使我的家鄉左營區有蠻多文化與運動資源，但仍然缺乏真正適合長者參與的活動與空間。因此，透過音樂讓長輩與年輕人互動，像是廣場舞，可把音樂改成年輕人做的音樂 這樣也能將這一輩的東西分享給長輩來互相交流，再來還有社區樂團和合唱團，讓長者在音樂與律動中提升身體機能，同時也促進人際之間的交流與互動。</p>
+            <p>此外，我覺得可以設立「樂齡音樂角」，提供電子樂器與錄音設備，讓長者能夠輕鬆接觸數位音樂創作，開發新的興趣和年輕人一起創作音樂增進世代之間的互動與情感聯繫，年輕人可以獲得贊助與推廣，長輩可以獲得情感上的支持與興趣自我實現，創造共贏的價值。</p>
+        </section>
+    </main>
     <footer>
         <p>© 2025 人口統計圖表. 數據來源：PlotDB</p>
+    </footer>
+</body>
+</html>
     </footer>
 </body>
 </html>
