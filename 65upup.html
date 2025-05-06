@@ -13,6 +13,7 @@
             padding: 0;
             background: linear-gradient(to bottom, #FFDEE9, #B5FFFC);
             color: #333;
+            transition: background 0.5s, color 0.5s;
         }
         header {
             background: linear-gradient(to right, #FF9A9E, #FAD0C4);
@@ -88,10 +89,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         button {
-            display: block;
-            margin: 20px auto;
+            display: inline-block;
+            margin: 10px;
             padding: 10px 20px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: white;
             background: #FF69B4;
             border: none;
@@ -101,6 +102,17 @@
         }
         button:hover {
             background: #FF1493;
+        }
+
+        /* 星空模式樣式 */
+        [data-theme="stars"] {
+            background: url('https://www.transparenttextures.com/patterns/stardust.png'), #000;
+            color: #FFD700;
+        }
+        [data-theme="stars"] p, 
+        [data-theme="stars"] section {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #FFD700;
         }
     </style>
 </head>
@@ -116,8 +128,6 @@
         <section>
             <h2>人口分析與觀察</h2>
             <p>根據資料分析，我的家鄉在113年12月的65歲以上人口中，透過地圖視覺化可明顯看出，人口老化主要集中於靠海的地區。</p>
-            <p>可發現有些行政區高齡比例明顯偏高，可能與長照資源、地區醫療條件有關。這提醒我們，社區在面對高齡化趨勢時，需思考在地照護、公共設施與醫療資源的再分配。</p>
-            <p>此分析期望能提供地方政府或民間團體，在規劃高齡友善城市策略時一個參考依據。</p>
         </section>
         <section>
             <h2>85歲以上人口統計</h2>
@@ -136,10 +146,22 @@
             <p>隨著高齡人口逐年增加，即使我的家鄉左營區有蠻多文化與運動資源，但仍然缺乏真正適合長者參與的活動與空間。因此，透過音樂讓長輩與年輕人互動，像是廣場舞，可把音樂改成年輕人做的音樂 這樣也能將這一輩的東西分享給長輩來互相交流，再來還有社區樂團和合唱團，讓長者在音樂與律動中提升身體機能，同時也促進人際之間的交流與互動。</p>
             <p>此外，我覺得可以設立「樂齡音樂角」，提供電子樂器與錄音設備，讓長者能夠輕鬆接觸數位音樂創作，開發新的興趣和年輕人一起創作音樂增進世代之間的互動與情感聯繫，年輕人可以獲得贊助與推廣，長輩可以獲得情感上的支持與興趣自我實現，創造共贏的價值。</p>
         </section>
-        <button>了解更多</button>
+        <div style="text-align: center;">
+            <button onclick="switchTheme('stars')">星空模式</button>
+            <button onclick="switchTheme('default')">回到預設模式</button>
+        </div>
     </main>
     <footer>
         <p>© 2025 人口統計圖表. 數據來源：PlotDB</p>
     </footer>
+    <script>
+        function switchTheme(theme) {
+            if (theme === 'stars') {
+                document.documentElement.setAttribute('data-theme', 'stars');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+        }
+    </script>
 </body>
 </html>
