@@ -106,18 +106,47 @@
 
         /* 星空模式樣式 */
         [data-theme="stars"] {
-            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat, #000;
+            background: #000;
             color: #FFD700;
+            overflow: hidden;
+            position: relative;
+        }
+        [data-theme="stars"]::before, 
+        [data-theme="stars"]::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.5) 1%, transparent 1%),
+                        radial-gradient(circle, rgba(255,255,255,0.5) 1%, transparent 1%);
+            background-size: 50px 50px;
+            animation: moveStars 30s linear infinite;
+        }
+        [data-theme="stars"]::after {
+            background-size: 100px 100px;
+            animation-duration: 60s;
+        }
+        [data-theme="stars"] h1, 
+        [data-theme="stars"] h2 {
+            color: #FFD700;
+            text-shadow: 3px 3px 5px rgba(255, 215, 0, 0.7);
         }
         [data-theme="stars"] p, 
         [data-theme="stars"] section {
             background: rgba(255, 255, 255, 0.1);
             border-color: #FFD700;
         }
-        [data-theme="stars"] h1, 
-        [data-theme="stars"] h2 {
-            color: #FFD700;
-            text-shadow: 3px 3px 5px rgba(255, 215, 0, 0.7);
+
+        /* 星星動畫效果 */
+        @keyframes moveStars {
+            from {
+                transform: translateX(0) translateY(0);
+            }
+            to {
+                transform: translateX(-50%) translateY(-50%);
+            }
         }
     </style>
 </head>
@@ -142,13 +171,6 @@
         <section>
             <h2>85歲以上人口分析與觀察</h2>
             <p>從數據中可觀察到，高雄市85歲以上人口的分布情況，與65歲以上人口的分布有些許不同。此年齡層的人口比例在某些傳統村落與偏遠地區顯著增加。</p>
-            <p>高齡人口的集中地區，可能與長期居住習慣、傳統文化以及該地的生活成本較低有關。這些地區的醫療資源與長照服務可能需要進一步強化，以應對逐年增加的需求。</p>
-            <p>透過這份資料，我們希望能協助政府單位及非營利組織，針對85歲以上高齡族群規劃更完善的生活支持系統，打造真正高齡友善的社區。</p>
-        </section>
-        <section>
-            <h2>集點子計畫</h2>
-            <img src="BMKFmhSNgkJ-mwadC3kTU.jpg" alt="高雄市人口統計圖片" style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <p>隨著高齡人口逐年增加，即使我的家鄉左營區有蠻多文化與運動資源，但仍然缺乏真正適合長者參與的活動與空間。因此，透過音樂讓長輩與年輕人互動，像是廣場舞，可把音樂改成年輕人做的音樂 這樣也能將這一輩的東西分享給長輩來互相交流，再來還有社區樂團和合唱團，讓長者在音樂與律動中提升身體機能，同時也促進人際之間的交流與互動。</p>
         </section>
         <div style="text-align: center;">
             <button onclick="switchTheme('stars')">星空模式</button>
